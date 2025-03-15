@@ -41,16 +41,20 @@ body {
     margin-bottom: 10px;
 }
 
-#passward_container {
+#password_container {
     width: 100%;
     max-width: 400px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-neutral-2);
     color: var(--color-neutral-1);
     border-radius: 8px;
     padding: 8px 18px;
+}
+
+#password_container.show {
+    display: flex;
 }
 
 #password {
@@ -75,7 +79,7 @@ body {
     color: var(--color-primary-2);
 }
 
-#passwaor_items {
+#password_items {
     width: 400px;
     background-color: var(--color-neutral-2);
     color: var(--color-neutral-1);
